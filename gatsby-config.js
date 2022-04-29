@@ -1,13 +1,6 @@
-const path = require("path");
+const path = require('path');
 
-const gatsbyRequiredRules = path.join(
-  process.cwd(),
-  "node_modules",
-  "gatsby",
-  "dist",
-  "utils",
-  "eslint-rules"
-);
+const gatsbyRequiredRules = path.join(process.cwd(), 'node_modules', 'gatsby', 'dist', 'utils', 'eslint-rules');
 
 module.exports = {
   siteMetadata: {
@@ -18,7 +11,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
+        // eslint-disable-next-line global-require
+        postCssPlugins: [require('tailwindcss'), require('autoprefixer')],
       },
     },
     {
@@ -39,13 +33,21 @@ module.exports = {
     `gatsby-plugin-sharp`,
     // 'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-plugin-eslint",
+      resolve: 'gatsby-plugin-eslint',
       options: {
         rulePaths: [gatsbyRequiredRules],
-        stages: ["develop"],
-        extensions: ["js", "jsx", "ts", "tsx"],
-        exclude: ["node_modules", "bower_components", ".cache", "public"],
+        stages: ['develop'],
+        extensions: ['js', 'jsx', 'ts', 'tsx'],
+        exclude: ['node_modules', 'bower_components', '.cache', 'public'],
       },
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
   ],
 };

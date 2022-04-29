@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import TECHNOLOGIES from './technologies';
+import TECHNOLOGIES from '../technologies';
 
 export default {
   time: 'Mar 2019 - Present',
@@ -28,5 +28,5 @@ export default {
     TECHNOLOGIES.eslint,
     TECHNOLOGIES.prettier,
   ],
-  image: <StaticImage src="../images/dw.png" alt="Digital Workspace Preview" />,
+  image: <StaticImage src="./digitalWorkspace.png" alt="Digital Workspace Preview" />,
 };
