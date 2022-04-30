@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import TECHNOLOGIES from '../technologies';
 
 export default {
-  time: 'Mar 2019 - Now',
+  time: '2019 - Now',
   link: 'https://www.sabre.com/products/digital-workspace/',
   title: 'Digital Workspace',
   subtitle: 'Empower Airport and Call Center Agents to Focus on Customers Evolution of Interact',
@@ -18,6 +18,7 @@ export default {
     TECHNOLOGIES.sass,
     TECHNOLOGIES.css,
     TECHNOLOGIES.nodejs,
+    TECHNOLOGIES.npm,
     TECHNOLOGIES.git,
     TECHNOLOGIES.bitbucket,
     TECHNOLOGIES.aws,
@@ -27,6 +28,7 @@ export default {
     TECHNOLOGIES.webpack,
     TECHNOLOGIES.eslint,
     TECHNOLOGIES.prettier,
+    TECHNOLOGIES.sonar,
   ],
   image: <StaticImage src="./digitalWorkspace.png" alt="Digital Workspace Preview" />,
 };
