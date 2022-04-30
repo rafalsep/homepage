@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import TECHNOLOGIES from '../technologies';
 
 export default {
-  time: 'Apr 2021 - Present',
+  time: 'Apr 2021 - Now',
   link: 'https://developer.sabre.com/home',
   title: 'Experience Layer',
   subtitle: 'GraphQL API tailored specifically for Sabre frontend/native applications to improve user experience',

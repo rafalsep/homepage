@@ -1,0 +1,30 @@
+@media screen and (min-width: 640px) {
+  .timeline:first-child {
+    padding-top: 0;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+
+  .timeline:first-child .time {
+    padding-top: 0;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+
+  .timeline:not(:first-child) .time:after {
+    top: 2.6rem;
+  }
+
+  .timeline:first-child .time .date {
+    margin-top: -0.66rem;
+    display: block;
+  }
+
+  .timeline:first-child .content {
+    padding-top: 0;
+  }
+
+  .timeline:not(:first-child) .content {
+    border-top: 1px solid rgb(132 204 22);
+  }
+}

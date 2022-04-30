@@ -3,9 +3,9 @@ import { StaticImage } from 'gatsby-plugin-image';
 import TECHNOLOGIES from '../technologies';
 
 export default {
-  time: 'Mar 2019 - Present',
+  time: 'Mar 2019 - Now',
   link: 'https://www.sabre.com/products/digital-workspace/',
-  title: 'DW – Digital Workspace',
+  title: 'Digital Workspace',
   subtitle: 'Empower Airport and Call Center Agents to Focus on Customers Evolution of Interact',
   description: 'Web and mobile application providing travel agents and airport agents shop & book, exchange and check-in capabilities',
   features: ['responsive web application written in ReactJS', 'iPad native application'],
