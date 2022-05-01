@@ -3,8 +3,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': 'url(https://image.ibb.co/gzOBup/showcase.jpg)',
-        avatar: "url('./9027145-modified.png)",
+        'hero-pattern': "url('../images/showcase.jpeg')",
       },
       strokeWidth: {
         3: '3',

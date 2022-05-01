@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -9,7 +8,7 @@ export default () => {
     <>
       <header>
         <div className="absolute top-5 left-5 z-10">
-          <a className="" href="#">
+          <a className="" href="/">
             <StaticImage width={100} src="../images/logo.png" alt="A dinosaur" />
           </a>
         </div>
@@ -29,23 +28,23 @@ export default () => {
         <nav className={`fixed top-0 left-0 w-screen h-full bg-black/80 flex flex-col z-20 ${!isNavOpen ? 'hidden' : ''} sm:hidden`}>
           <div className="">
             <button type="button" className="w-10 h-10 absolute top-5 right-9" onClick={() => setIsNavOpen(false)}>
-              <svg fill="white" viewBox="0 0 40 40">
+              <svg className="fill-lime-500" viewBox="0 0 40 40">
                 <path className="close-x stroke-white stroke-5 fill-transparent" d="M 10,10 L 30,30 M 30,10 L 10,30" />
               </svg>
             </button>
             <ul className="absolute left-1/2 inline -translate-x-2/4 top-36 text-center">
               <li className="p-4">
-                <a className="text-white text-4xl no-underline" onClick={() => setIsNavOpen(false)}>
+                <a className="text-4xl no-underline" href="/about" onClick={() => setIsNavOpen(false)}>
                   About
                 </a>
               </li>
               <li className="p-4">
-                <a className="text-white text-4xl no-underline" onClick={() => setIsNavOpen(false)}>
-                  Portfolio
+                <a className="text-4xl no-underline" href="/projects" onClick={() => setIsNavOpen(false)}>
+                  Projects
                 </a>
               </li>
               <li className="p-4">
-                <a className="text-white text-4xl no-underline" onClick={() => setIsNavOpen(false)}>
+                <a className="text-4xl no-underline" href="/contact" onClick={() => setIsNavOpen(false)}>
                   Contact
                 </a>
               </li>
@@ -53,16 +52,16 @@ export default () => {
           </div>
         </nav>
       )}
-      <nav className={`absolute top-0 right-5 z-20 msm:hidden`}>
+      <nav className="absolute top-0 right-5 z-20 msm:hidden">
         <div className="">
           <ol className="flex text-2xl">
             <li className="p-4">
-              <a className="" href="#about">
+              <a className="" href="/about">
                 About
               </a>
             </li>
             <li className="p-4">
-              <a className="" href="#projects">
+              <a className="" href="/projects">
                 Projects
               </a>
             </li>

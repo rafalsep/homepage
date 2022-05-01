@@ -1,26 +1,28 @@
 @tailwind base;
 
 @layer base {
-  body {
-    @apply text-white;
-    @apply bg-zinc-900;
+  html {
+    @apply text-white bg-zinc-900 text-[16px] lg:text-[18px] xl:text-[20px];
   }
   h1 {
-    @apply text-5xl;
+    @apply text-6xl;
   }
   h2 {
     @apply text-3xl;
   }
   h3 {
-    @apply text-lg;
+    @apply text-xl;
   }
   a {
-    @apply text-white no-underline hover:text-lime-500 cursor-pointer;
+    @apply text-lime-500 no-underline cursor-pointer;
   }
-}
-
-.qqqq {
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  a:hover {
+    box-shadow: inset 0 -0.1em 0 currentColor;
+    transition: box-shadow 0.2s ease-out;
+  }
+  a svg:hover {
+    filter: drop-shadow(3px 5px 2px rgb(32 204 22 / 0.8));
+  }
 }
 
 @tailwind components;
@@ -62,4 +64,10 @@ html {
   animation-fill-mode: both;
   writing-mode: vertical-rl;
   text-orientation: mixed;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
 }

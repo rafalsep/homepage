@@ -1,4 +1,7 @@
 import React from 'react';
+import TECHNOLOGIES from '@shared/technologies';
+
+const technologies = Object.values(TECHNOLOGIES);
 
 const About = () => (
   <section id="about" className="">
@@ -6,16 +9,28 @@ const About = () => (
       <header>
         <h1 className="pb-10 font-bold">About me</h1>
       </header>
-      <h2 className="pb-4 font-semibold">Hi, I&apos;m Rafal Szczepankiewicz</h2>
       <p className="pb-4">
-        I live in Cracow, Poland and I&apos;m a master of science graduate of Jagiellonian University, majored in computer science with a specialization in applied computer science.
+        I live in Cracow, Poland and I&apos;m a master of science graduate of <a href="https://en.uj.edu.pl/">Jagiellonian University</a>, majored in computer science with a specialization in applied
+        computer science.
       </p>
       <p className="pb-4">
-        I&apos;ve worked with multiple technologies and languages in both frontend and backend. I tend to put my fingers into every aspect of computer science wearing all kind of hats.
+        With over 13 years of professional experience I&apos;ve worked with multiple technologies and languages in both frontend and backend. I tend to put my fingers into every aspect of computer
+        science wearing all kind of hats. Lately I&apos;ve been focused on modern web application design and development in airline sector under E-Commerce area.
       </p>
+      <p className="pb-4">Clean code and Best practices enthusiast. React, Typescript and GraphQL fan.</p>
       <p className="pb-4">
-        I currently work via vendor SII at <a href="https://www.sabre.com">Sabre</a>. Previously I&apos;ve worked at ABB and IBM.
+        Currently I&apos;m self employed working on a contract through vendor <a href="https://sii.pl/en/">SII</a> for <a href="https://www.sabre.com/">Sabre Airline Solutions</a>.
       </p>
+      <div className="mt-5">
+        <h3 className="text-gray-500 uppercase pb-2">Technologies</h3>
+        <ul className="list-none">
+          {technologies.map((technology, index) => (
+            <li key={`${index}`} className="inline-block scale-75">
+              {technology}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   </section>
 );

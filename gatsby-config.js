@@ -49,5 +49,14 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          '@shared': path.resolve(__dirname, 'src/shared'),
+        },
+        extensions: ['js'],
+      },
+    },
   ],
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import TECHNOLOGIES from '../technologies';
+import TECHNOLOGIES from '@shared/technologies';
 
 export default {
   time: '2019 - Now',
