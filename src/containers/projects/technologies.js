@@ -187,7 +187,7 @@ const TECHNOLOGIES = {
     </a>
   ),
   lodash: (
-    <a href="https://www.npmjs.com/" rel="noreferrer" target="_blank">
+    <a href="https://lodash.com/" rel="noreferrer" target="_blank">
       <svg width="40" height="40" fill="#3492FF" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <title>Lodash</title>
         <path d="m0 20.253h24v2.542h-24zm18.061-15.041.223.031c1.933-.071 3.885 1.006 4.882 2.674.844 1.566.976 3.458.712 5.187-.204 1.657-1.149 3.234-2.644 4.027-2.177 1.139-5.085 1.017-7.017-.59-1.994-1.942-2.461-5.136-1.444-7.678.711-2.207 3-3.661 5.288-3.63zm.234 1.8h-.183c-1.424-.03-2.777.915-3.285 2.237-.732 1.831-.732 4.17.691 5.695 1.17 1.434 3.458 1.597 4.882.438 1.525-1.312 1.83-3.59 1.322-5.451-.275-1.648-1.78-2.929-3.458-2.929zm-18.295-5.807h2.237v14.847h8.848v1.831h-11.085z" />
@@ -195,7 +195,7 @@ const TECHNOLOGIES = {
     </a>
   ),
   sonar: (
-    <a href="https://www.npmjs.com/" rel="noreferrer" target="_blank">
+    <a href="https://www.sonarqube.org/" rel="noreferrer" target="_blank">
       <svg width="40" height="40" fill="#4E9BCD" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <title>SonarQube</title>
         <path d="M15.685.386l-.465.766c3.477 2.112 6.305 5.27 7.966 8.89L24 9.67C22.266 5.887 19.313 2.59 15.685.386zM8.462.91l-.305 1.075c6.89 1.976 12.384 7.64 13.997 14.421l1.085-.258C21.535 8.977 15.735 2.997 8.462.909zM0 2.667v1.342c10.963 0 19.883 8.795 19.883 19.605h1.342c0-11.55-9.522-20.947-21.225-20.947z" />

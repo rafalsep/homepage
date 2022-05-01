@@ -9,11 +9,13 @@ export default () => {
     <>
       <header>
         <div className="absolute top-5 left-5 z-10">
-          <StaticImage width={100} src="../images/logo.png" alt="A dinosaur" />
+          <a className="" href="#">
+            <StaticImage width={100} src="../images/logo.png" alt="A dinosaur" />
+          </a>
         </div>
         <div className="absolute top-5 right-5 z-10">
           {!isNavOpen && (
-            <button type="button" onClick={() => setIsNavOpen(true)}>
+            <button type="button" className={`${isNavOpen ? 'hidden' : ''} sm:hidden`} onClick={() => setIsNavOpen(true)}>
               <svg fill="white" viewBox="0 0 100 80" width="40" height="40">
                 <rect width="100" height="10" />
                 <rect y="30" width="100" height="10" />
@@ -24,7 +26,7 @@ export default () => {
         </div>
       </header>
       {isNavOpen && (
-        <nav className="fixed top-0 left-0 w-screen h-full bg-black/80 flex flex-col z-20 testaaa">
+        <nav className={`fixed top-0 left-0 w-screen h-full bg-black/80 flex flex-col z-20 ${!isNavOpen ? 'hidden' : ''} sm:hidden`}>
           <div className="">
             <button type="button" className="w-10 h-10 absolute top-5 right-9" onClick={() => setIsNavOpen(false)}>
               <svg fill="white" viewBox="0 0 40 40">
@@ -51,6 +53,27 @@ export default () => {
           </div>
         </nav>
       )}
+      <nav className={`absolute top-0 right-5 z-20 msm:hidden`}>
+        <div className="">
+          <ol className="flex text-2xl">
+            <li className="p-4">
+              <a className="" href="#about">
+                About
+              </a>
+            </li>
+            <li className="p-4">
+              <a className="" href="#projects">
+                Projects
+              </a>
+            </li>
+            <li className="p-4">
+              <a className="" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ol>
+        </div>
+      </nav>
     </>
   );
 };

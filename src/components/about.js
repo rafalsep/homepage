@@ -1,16 +1,12 @@
 import React from 'react';
 
 const About = () => (
-  <section className="">
+  <section id="about" className="">
     <div className="">
       <header>
-        <h1 className="pb-10 font-bold">
-          About me
-        </h1>
+        <h1 className="pb-10 font-bold">About me</h1>
       </header>
-      <h2 className="pb-4 font-semibold">
-        Hi, I&apos;m Rafal Szczepankiewicz
-      </h2>
+      <h2 className="pb-4 font-semibold">Hi, I&apos;m Rafal Szczepankiewicz</h2>
       <p className="pb-4">
         I live in Cracow, Poland and I&apos;m a master of science graduate of Jagiellonian University, majored in computer science with a specialization in applied computer science.
       </p>

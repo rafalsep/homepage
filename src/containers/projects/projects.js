@@ -7,7 +7,7 @@ import * as styles from './projects.module.css';
 const projects = [experienceLayer, digitalWorkspace, digitalExperience];
 
 const Projects = () => (
-  <section className="">
+  <section id="projects" className="">
     <div className="">
       <header>
         <h1 className="pb-5 font-bold">Projects</h1>
