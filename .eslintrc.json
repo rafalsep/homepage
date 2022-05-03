@@ -15,7 +15,10 @@
       "version": "detect"
     },
     "import/resolver": {
-      "alias": [["@shared", "./src/shared"]]
+      "alias": [
+        ["@shared", "./src/shared"],
+        ["@images", "./src/images"]
+      ]
     }
   },
   "rules": {

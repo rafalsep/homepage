@@ -2,5 +2,6 @@
 System.config({
   paths: {
     '@shared/*': './src/shared/*',
+    '@images/*': './src/images/*',
   },
 });

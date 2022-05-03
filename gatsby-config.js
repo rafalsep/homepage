@@ -54,6 +54,7 @@ module.exports = {
       options: {
         alias: {
           '@shared': path.resolve(__dirname, 'src/shared'),
+          '@images': path.resolve(__dirname, 'src/images'),
         },
         extensions: ['js'],
       },

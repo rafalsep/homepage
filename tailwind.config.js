@@ -20,6 +20,10 @@ module.exports = {
         mmd: { max: '767px' },
         msm: { max: '639px' },
       },
+      gridTemplateColumns: {
+        libs: 'repeat(auto-fill, minmax(300px, 1fr))',
+        projects: 'repeat(auto-fill, minmax(200px, 1fr))',
+      },
     },
   },
   plugins: [],

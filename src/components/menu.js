@@ -7,9 +7,9 @@ export default () => {
   return (
     <>
       <header>
-        <div className="absolute top-5 left-5 z-10">
+        <div className="absolute top-5 left-5 z-10 border-4 border-lime-500 rounded-full border-dashed">
           <a className="" href="/">
-            <StaticImage width={100} src="../images/logo.png" alt="A dinosaur" />
+            <StaticImage imgClassName="!p-2" width={75} src="../images/logo.png" alt="A dinosaur" />
           </a>
         </div>
         <div className="absolute top-5 right-5 z-10">
