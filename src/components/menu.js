@@ -44,6 +44,11 @@ export default () => {
                 </a>
               </li>
               <li className="p-4">
+                <a className="text-4xl no-underline" href="/libs" onClick={() => setIsNavOpen(false)}>
+                  Libs/Gists
+                </a>
+              </li>
+              <li className="p-4">
                 <a className="text-4xl no-underline" href="/contact" onClick={() => setIsNavOpen(false)}>
                   Contact
                 </a>
@@ -63,6 +68,11 @@ export default () => {
             <li className="p-4">
               <a className="" href="/projects">
                 Projects
+              </a>
+            </li>
+            <li className="p-4">
+              <a className="" href="/libs">
+                Libs/Gists
               </a>
             </li>
             <li className="p-4">
