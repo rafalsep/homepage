@@ -9,6 +9,7 @@ const Home = () => (
           className="w-[200px] h-[200px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px] xl:w-[350px] xl:h-[350px] border-4 border-lime-500 border-dashed rounded-full"
           src={avatar}
           alt="Rafal Szczepankiewicz"
+          data-test="avatar"
         />
       </div>
       <div className="flex-1">

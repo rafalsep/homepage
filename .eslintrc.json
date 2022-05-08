@@ -1,9 +1,11 @@
 {
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "cypress/globals": true
   },
-  "extends": ["airbnb", "prettier"],
+  "extends": ["airbnb", "prettier", "plugin:cypress/recommended"],
+  "plugins": ["cypress"],
   "parserOptions": {
     "ecmaVersion": 12,
     "parser": "@babel/eslint-parser",

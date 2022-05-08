@@ -5,15 +5,15 @@ import * as styles from './latestProjects.module.css';
 const projects = [
   {
     image: <StaticImage className={styles.image} src="../images/experienceLayer.png" alt="Experience Layer" />,
-    href: '/projects',
+    href: '/projects#experienceLayer',
   },
   {
     image: <StaticImage className={styles.image} src="../images/digitalWorkspace.png" alt="Digital Workspace" />,
-    href: '/projects',
+    href: '/projects#digitalWorkspace',
   },
   {
     image: <StaticImage className={styles.image} src="../images/digitalExperience.png" alt="Digital Experience" />,
-    href: '/projects',
+    href: '/projects#digitalExperience',
   },
   {
     image: <StaticImage className={styles.image} src="../images/experienceLayer.png" alt="Experience Layer" />,
@@ -58,7 +58,7 @@ const LatestProjects = () => (
       </div>
       <div className="grid grid-cols-projects gap-1 py-12 box-wrap">
         {projects.map(({ image, href }) => (
-          <div className={`relative overflow-hidden ${styles.imageWrapper}`}>
+          <div key={href} className={`relative overflow-hidden ${styles.imageWrapper}`}>
             {image}
             <a className={`${styles.imageLink} absolute text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-600 hover:bg-zinc-900`} href={href}>
               Show&nbsp;details
