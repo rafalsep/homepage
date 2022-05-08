@@ -46,17 +46,15 @@ const libs = [
   },
 ];
 
-const Libs = ({ showAll }) => (
+const Libs = ({ standalone }) => (
   <section className="">
     <div>
       <div className="md:flex items-end">
         <div className="">
-          <header>
-            <h1 className="pb-10">Libs/Gists</h1>
-          </header>
-          <p className="pt-4">Other smaller projects and gists that do not fall into eCommerce category that I&apos;ve worked on over the years. Please check github for details on each one.</p>
+          <header>{standalone ? <h1 className="pb-10">Libs/Gists</h1> : <h2 className="pb-10">Libs/Gists</h2>}</header>
+          <p>Other smaller projects and gists that do not fall into eCommerce category that I&apos;ve worked on over the years. Please check github for details on each one.</p>
         </div>
-        {!showAll && (
+        {!standalone && (
           <div className="pt-8 md:pt:0 md:ml-16">
             <a className="text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-900 hover:bg-zinc-700" href="/libs">
               Learn&nbsp;more
@@ -66,7 +64,7 @@ const Libs = ({ showAll }) => (
       </div>
       <ul className="mt-12 grid grid-cols-libs gap-2 relative">
         {libs.map(({ title, description, link, technologies, github, article }, libIndex) => {
-          const liClassName = showAll ? `relative` : `relative ${libIndex === 3 ? 'msm:hidden' : ''} ${libIndex >= 4 ? 'mmd:hidden' : ''}`;
+          const liClassName = standalone ? `relative` : `relative ${libIndex === 3 ? 'msm:hidden' : ''} ${libIndex >= 4 ? 'mmd:hidden' : ''}`;
           return (
             <li className={liClassName} key={title}>
               <div className="flex justify-between flex-col items-start relative h-full p-4 sm:p-8 bg-gray-800">

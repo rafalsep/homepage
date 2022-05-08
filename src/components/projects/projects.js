@@ -14,7 +14,7 @@ const Projects = () => (
   <section id="projects" className="">
     <div className="">
       <header>
-        <h1 className="pb-5 font-bold">Projects</h1>
+        <h1 className="pb-10">Projects</h1>
       </header>
       <ul className="list-none">
         {projects.map(({ time, link, title, subtitle, description, features, technologies, image }) => (
@@ -28,8 +28,8 @@ const Projects = () => (
               <div className="lg:flex-1">
                 <a href={link} className="no-underline" target="_blank" rel="noopener noreferrer">
                   <h2 className="pb-2 text-lime-500">{title}</h2>
-                  <div className="text-gray-400">{subtitle}</div>
                 </a>
+                <p className="text-gray-400">{subtitle}</p>
                 <div className="mb-5">
                   <p className="py-5">{description}</p>
                   <ul className="list-circle pl-10">
@@ -39,7 +39,7 @@ const Projects = () => (
                   </ul>
                 </div>
                 <div className="mt-5">
-                  <h3 className="text-gray-500 uppercase">Technologies</h3>
+                  <h3 className="text-gray-500">Technologies</h3>
                   <ul className="list-none">
                     {technologies.map((technology, index) => (
                       <li key={`${title}-${index}`} className="inline-block p-2">

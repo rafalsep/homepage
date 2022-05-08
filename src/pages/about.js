@@ -3,14 +3,13 @@ import Menu from '../components/menu';
 import About from '../components/about';
 import Footer from '../components/footer';
 
-const Index = () => (
+const AboutPage = () => (
   <main className="flex flex-col min-h-screen">
-    <title>Home Page</title>
-    <div className="flex-1 p-8">
+    <title>About Me Page</title>
+    <div className="flex-1">
       <Menu />
-
       <div className="px-5 sm:px-10 lg:px-20 pt-32 lg:pt-24">
-        <About />
+        <About standalone />
       </div>
     </div>
     <div>
@@ -19,4 +18,4 @@ const Index = () => (
   </main>
 );
 
-export default Index;
+export default AboutPage;

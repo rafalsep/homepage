@@ -3,12 +3,10 @@ import TECHNOLOGIES from '@shared/technologies';
 
 const technologies = Object.values(TECHNOLOGIES);
 
-const About = () => (
+const About = ({ standalone }) => (
   <section id="about" className="">
     <div className="">
-      <header>
-        <h1 className="pb-10 font-bold">About me</h1>
-      </header>
+      <header>{standalone ? <h1 className="pb-10">About me</h1> : <h2 className="pb-10">About me</h2>}</header>
       <p className="pb-4">
         I live in Cracow, Poland and I&apos;m a master of science graduate of <a href="https://en.uj.edu.pl/">Jagiellonian University</a>, majored in computer science with a specialization in applied
         computer science.
@@ -22,7 +20,7 @@ const About = () => (
         Currently I&apos;m self employed working on a contract through vendor <a href="https://sii.pl/en/">SII</a> for <a href="https://www.sabre.com/">Sabre Airline Solutions</a>.
       </p>
       <div className="mt-5">
-        <h3 className="text-gray-500 uppercase pb-2">Technologies I&apos;ve worked with</h3>
+        <h3 className="text-zinc-500 uppercase pb-2">Technologies I&apos;ve worked with</h3>
         <ul className="list-none">
           {technologies.map((technology, index) => (
             <li key={`${index}`} className="inline-block scale-75">

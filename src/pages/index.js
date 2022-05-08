@@ -18,23 +18,23 @@ const Index = () => (
         <Home />
       </div>
 
-      <div className="pt-16">
+      <div className="pt-12">
         <LatestProjects />
       </div>
 
-      <div className="px-5 sm:px-10 pt-16">
+      <div className="px-5 sm:px-10 pt-12">
         <About />
       </div>
 
-      <div className="px-5 sm:px-10 pt-16">
+      <div className="px-5 sm:px-10 pt-12">
         <Libs />
       </div>
 
-      <div className="px-5 sm:px-10 pt-16">
+      <div className="px-5 sm:px-10 pt-12">
         <Contact />
       </div>
 
-      <div className="mt-16 bg-zinc-800">
+      <div className="mt-12 py-2 bg-zinc-800">
         <Footer />
       </div>
     </div>

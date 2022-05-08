@@ -5,10 +5,12 @@
     @apply text-white bg-zinc-900 text-[16px] lg:text-[18px] xl:text-[20px];
   }
   h1 {
-    @apply text-6xl;
+    @apply text-6xl leading-tight;
   }
   h2 {
-    @apply text-3xl;
+    @apply text-4xl flex;
+    @apply before:content-['['] before:text-xl before:items-center before:flex before:pr-2 before:text-zinc-500;
+    @apply after:content-[']'] after:text-xl after:items-center after:flex after:pl-2 after:text-zinc-500;
   }
   h3 {
     @apply text-xl;

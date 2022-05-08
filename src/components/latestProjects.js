@@ -39,22 +39,22 @@ const LatestProjects = () => (
       <div className="px-5 md:pl-10 md:flex items-end">
         <div className="">
           <header>
-            <h1 className="">Projects</h1>
+            <h2 className="pb-10">Projects</h2>
           </header>
-          <p className="pt-4">
+          <p>
             Big eCommerce projects I&apos;ve worked on over the years together with amazing people from around the globe. Most of them are still alive and in good condition, earning every peny spend
             on development.
           </p>
         </div>
-        <div className="pt-8 md:pt:0 md:ml-16">
+        <div className="pt-10 md:pt:0 md:ml-16">
           <a className="text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-900 hover:bg-zinc-700" href="/projects">
             Learn&nbsp;more
           </a>
         </div>
       </div>
-      <div className="grid grid-cols-projects gap-1 py-12 box-wrap">
-        {projects.map(({ image, href }, projectindex) => (
-          <div key={href} className={`relative overflow-hidden ${styles.imageWrapper} ${projectindex >= 4 ? 'mmd:hidden' : ''}`}>
+      <div className="grid grid-cols-projects gap-1 pt-12 box-wrap">
+        {projects.map(({ image, href }, projectIndex) => (
+          <div key={href} className={`relative overflow-hidden ${styles.imageWrapper} ${projectIndex === 3 ? 'msm:hidden' : ''} ${projectIndex >= 4 ? 'mmd:hidden' : ''}`}>
             {image}
             <a className={`${styles.imageLink} absolute text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-600 hover:bg-zinc-900`} href={href}>
               Show&nbsp;details
