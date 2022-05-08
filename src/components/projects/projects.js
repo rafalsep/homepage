@@ -2,9 +2,13 @@ import React from 'react';
 import digitalWorkspace from './digitalWorkspace';
 import experienceLayer from './experienceLayer';
 import digitalExperience from './digitalExperience';
+import dcci from './dcci';
+import ssm from './ssm';
+import bol from './bol';
+import auiml from './auiml';
 import * as styles from './projects.module.css';
 
-const projects = [experienceLayer, digitalWorkspace, digitalExperience];
+const projects = [experienceLayer, digitalWorkspace, digitalExperience, dcci, ssm, bol, auiml];
 
 const Projects = () => (
   <section id="projects" className="">
@@ -22,7 +26,7 @@ const Projects = () => (
             </div>
             <div className={`${styles.content} pt-3 sm:py-5 sm:pl-0 sm:ml-[8.5rem] sm:mr-2 lg:flex`}>
               <div className="lg:flex-1">
-                <a href={link} className="no-underline">
+                <a href={link} className="no-underline" target="_blank" rel="noopener noreferrer">
                   <h2 className="pb-2 text-lime-500">{title}</h2>
                   <div className="text-gray-400">{subtitle}</div>
                 </a>

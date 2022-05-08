@@ -4,36 +4,32 @@ import * as styles from './latestProjects.module.css';
 
 const projects = [
   {
-    image: <StaticImage className={styles.image} src="../images/experienceLayer.png" alt="Experience Layer" />,
+    image: <StaticImage className={styles.image} src="./projects/experienceLayer/experienceLayer.png" alt="Experience Layer" />,
     href: '/projects#experienceLayer',
   },
   {
-    image: <StaticImage className={styles.image} src="../images/digitalWorkspace.png" alt="Digital Workspace" />,
+    image: <StaticImage className={styles.image} src="./projects/digitalWorkspace/digitalWorkspace.png" alt="Digital Workspace" />,
     href: '/projects#digitalWorkspace',
   },
   {
-    image: <StaticImage className={styles.image} src="../images/digitalExperience.png" alt="Digital Experience" />,
+    image: <StaticImage className={styles.image} src="./projects/digitalExperience/digitalExperience.png" alt="Digital Experience" />,
     href: '/projects#digitalExperience',
   },
   {
-    image: <StaticImage className={styles.image} src="../images/experienceLayer.png" alt="Experience Layer" />,
-    href: '/projects',
+    image: <StaticImage className={styles.image} src="./projects/dcci/dcci.png" alt="Digital Connect Check-In" />,
+    href: '/projects#dcci',
   },
   {
-    image: <StaticImage className={styles.image} src="../images/digitalWorkspace.png" alt="Digital Workspace" />,
-    href: '/projects',
+    image: <StaticImage className={styles.image} src="./projects/ssm/ssm.png" alt="Sabre Sonic Mobile" />,
+    href: '/projects#ssm',
   },
   {
-    image: <StaticImage className={styles.image} src="../images/digitalExperience.png" alt="Digital Experience" />,
-    href: '/projects',
+    image: <StaticImage className={styles.image} src="./projects/bol/bol.jpeg" alt="Business Online" />,
+    href: '/projects#bol',
   },
   {
-    image: <StaticImage className={styles.image} src="../images/experienceLayer.png" alt="Experience Layer" />,
-    href: '/projects',
-  },
-  {
-    image: <StaticImage className={styles.image} src="../images/digitalWorkspace.png" alt="Digital Workspace" />,
-    href: '/projects',
+    image: <StaticImage className={styles.image} src="./projects/auiml/auiml.png" alt="Abstract User Interface Markup Language" />,
+    href: '/projects#auiml',
   },
 ];
 
@@ -57,8 +53,8 @@ const LatestProjects = () => (
         </div>
       </div>
       <div className="grid grid-cols-projects gap-1 py-12 box-wrap">
-        {projects.map(({ image, href }) => (
-          <div key={href} className={`relative overflow-hidden ${styles.imageWrapper}`}>
+        {projects.map(({ image, href }, projectindex) => (
+          <div key={href} className={`relative overflow-hidden ${styles.imageWrapper} ${projectindex >= 4 ? 'mmd:hidden' : ''}`}>
             {image}
             <a className={`${styles.imageLink} absolute text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-600 hover:bg-zinc-900`} href={href}>
               Show&nbsp;details

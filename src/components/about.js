@@ -22,7 +22,7 @@ const About = () => (
         Currently I&apos;m self employed working on a contract through vendor <a href="https://sii.pl/en/">SII</a> for <a href="https://www.sabre.com/">Sabre Airline Solutions</a>.
       </p>
       <div className="mt-5">
-        <h3 className="text-gray-500 uppercase pb-2">Technologies</h3>
+        <h3 className="text-gray-500 uppercase pb-2">Technologies I&apos;ve worked with</h3>
         <ul className="list-none">
           {technologies.map((technology, index) => (
             <li key={`${index}`} className="inline-block scale-75">
