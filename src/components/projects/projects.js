@@ -17,8 +17,8 @@ const Projects = () => (
         <h1 className="pb-10">Projects</h1>
       </header>
       <ul className="list-none">
-        {projects.map(({ time, link, title, subtitle, description, features, technologies, image }) => (
-          <li key={title} className={`${styles.timeline} block msm:border-t-lime-800 msm:border-t relative py-2 msm:pb-10 msm:pt-4`}>
+        {projects.map(({ time, link, name, title, subtitle, description, features, technologies, image }) => (
+          <li id={name} key={title} className={`${styles.timeline} block msm:border-t-lime-800 msm:border-t relative py-2 msm:pb-10 msm:pt-4`}>
             <div
               className={`${styles.time} text-gray-500 msm:pt-3 sm:absolute sm:top-0 sm:left-0 sm:bottom-0 sm:w-28 sm:pr-5 sm:py-8 sm:text-right sm:border-r sm:border-r-lime-500 sm:after:content-[''] sm:after:absolute sm:after:-right-1 sm:after:top-0 sm:after:w-2 sm:after:h-2 sm:after:bg-amber-500`}
             >
@@ -26,7 +26,7 @@ const Projects = () => (
             </div>
             <div className={`${styles.content} pt-3 sm:py-5 sm:pl-0 sm:ml-[8.5rem] sm:mr-2 lg:flex`}>
               <div className="lg:flex-1">
-                <a href={link} className="no-underline" target="_blank" rel="noopener noreferrer">
+                <a href={link}>
                   <h2 className="pb-2 text-lime-500">{title}</h2>
                 </a>
                 <p className="text-gray-400">{subtitle}</p>

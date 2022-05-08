@@ -5,6 +5,7 @@ import TECHNOLOGIES from '@shared/technologies';
 export default {
   time: '2019 - Now',
   link: 'https://www.sabre.com/products/digital-workspace/',
+  name: 'dw',
   title: 'Digital Workspace',
   subtitle: 'Empower Airport and Call Center Agents to Focus on Customers Evolution of Interact',
   description: 'Web and mobile application providing travel agents and airport agents shop & book, exchange and check-in capabilities',

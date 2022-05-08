@@ -8,8 +8,11 @@ const About = ({ standalone }) => (
     <div className="">
       <header>{standalone ? <h1 className="pb-10">About me</h1> : <h2 className="pb-10">About me</h2>}</header>
       <p className="pb-4">
-        I live in Cracow, Poland and I&apos;m a master of science graduate of <a href="https://en.uj.edu.pl/">Jagiellonian University</a>, majored in computer science with a specialization in applied
-        computer science.
+        I live in Cracow, Poland and I&apos;m a master of science graduate of{' '}
+        <a href="https://en.uj.edu.pl/" rel="noreferrer" target="_blank">
+          Jagiellonian University
+        </a>
+        , majored in computer science with a specialization in applied computer science.
       </p>
       <p className="pb-4">
         With over 13 years of professional experience I&apos;ve worked with multiple technologies and languages in both frontend and backend. I tend to put my fingers into every aspect of computer
@@ -17,7 +20,15 @@ const About = ({ standalone }) => (
       </p>
       <p className="pb-4">Clean code and Best practices enthusiast. React, Typescript and GraphQL fan.</p>
       <p className="pb-4">
-        Currently I&apos;m self employed working on a contract through vendor <a href="https://sii.pl/en/">SII</a> for <a href="https://www.sabre.com/">Sabre Airline Solutions</a>.
+        Currently I&apos;m self employed working on a contract through vendor{' '}
+        <a href="https://sii.pl/en/" rel="noreferrer" target="_blank">
+          SII
+        </a>{' '}
+        for{' '}
+        <a href="https://www.sabre.com/" rel="noreferrer" target="_blank">
+          Sabre Airline Solutions
+        </a>
+        .
       </p>
       <div className="mt-5">
         <h3 className="text-zinc-500 uppercase pb-2">Technologies I&apos;ve worked with</h3>

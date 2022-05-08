@@ -5,6 +5,7 @@ import TECHNOLOGIES from '@shared/technologies';
 export default {
   time: '2009 - 2011',
   link: 'https://lwn.net/Articles/95570/',
+  name: 'bol',
   title: 'Abstract User Interface Markup Language',
   subtitle: 'Easy graphical component creation and development',
   description: `Abstract XML based language that allows user to create graphical components such as

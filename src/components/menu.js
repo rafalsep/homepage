@@ -34,22 +34,22 @@ export default () => {
             </button>
             <ul className="absolute left-1/2 inline -translate-x-2/4 top-36 text-center">
               <li className="p-4">
-                <a className="text-4xl no-underline" href="/about" onClick={() => setIsNavOpen(false)}>
+                <a className="text-4xl" href="/about" onClick={() => setIsNavOpen(false)}>
                   About
                 </a>
               </li>
               <li className="p-4">
-                <a className="text-4xl no-underline" href="/projects" onClick={() => setIsNavOpen(false)}>
+                <a className="text-4xl" href="/projects" onClick={() => setIsNavOpen(false)}>
                   Projects
                 </a>
               </li>
               <li className="p-4">
-                <a className="text-4xl no-underline" href="/libs" onClick={() => setIsNavOpen(false)}>
+                <a className="text-4xl" href="/libs" onClick={() => setIsNavOpen(false)}>
                   Libs/Gists
                 </a>
               </li>
               <li className="p-4">
-                <a className="text-4xl no-underline" href="/contact" onClick={() => setIsNavOpen(false)}>
+                <a className="text-4xl" href="/contact" onClick={() => setIsNavOpen(false)}>
                   Contact
                 </a>
               </li>

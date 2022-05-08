@@ -5,6 +5,7 @@ import TECHNOLOGIES from '@shared/technologies';
 export default {
   time: '2017 - 2019',
   link: 'https://www.sabre.com/products/digital-experience/',
+  name: 'dx',
   title: 'Digital Experience',
   subtitle: 'Embrace Next-Generation Airline E-Commerce',
   description: 'Web application used to book, exchange and checkin airline tickets. Used by airlines such as Kulula, Air Serbia or Bangkok Airways',

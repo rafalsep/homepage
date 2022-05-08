@@ -5,6 +5,7 @@ import TECHNOLOGIES from '@shared/technologies';
 export default {
   time: '2021 - Now',
   link: 'https://developer.sabre.com/home',
+  name: 'el',
   title: 'Experience Layer',
   subtitle: 'GraphQL API tailored specifically for Sabre frontend/native applications to improve user experience',
   description: 'Backend for frontend architecture handling integration with multiple APIs, orchestration and providing response based on requester needs eliminating over-fetching',

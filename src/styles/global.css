@@ -13,10 +13,10 @@
     @apply after:content-[']'] after:text-xl after:items-center after:flex after:pl-2 after:text-zinc-500;
   }
   h3 {
-    @apply text-xl;
+    @apply text-2xl;
   }
   a {
-    @apply text-lime-500 no-underline cursor-pointer;
+    @apply text-lime-500 underline decoration-lime-800 cursor-pointer underline-offset-4;
   }
   a:hover {
     box-shadow: inset 0 -0.1em 0 currentColor;

@@ -5,6 +5,7 @@ import TECHNOLOGIES from '@shared/technologies';
 export default {
   time: '2015 - 2016',
   link: 'https://www.lionair.co.id/en/manage-booking/web-check-in',
+  name: 'ssm',
   title: 'Sabre Sonic Mobile',
   subtitle: 'Fully customizable mobile checkin and booking solution',
   description: 'Web application used to book and checkin airline tickets. Used by almost 20 airlines such as Etihad Airways, Alitalia, Kulula or Aeroflot',

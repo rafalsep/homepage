@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 
 const Contact = ({ standalone }) => {
@@ -30,56 +29,56 @@ const Contact = ({ standalone }) => {
               <div className="w-full md:w-1/2 px-3 mb-3 md:mb-0">
                 <label className="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" htmlFor="contact-name">
                   Name
+                  <input
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 mt-2 leading-tight focus:outline-none focus:bg-white"
+                    id="contact-name"
+                    type="text"
+                    placeholder="Jane"
+                    name="name"
+                  />
                 </label>
-                <input
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="contact-name"
-                  type="text"
-                  placeholder="Jane"
-                  name="name"
-                />
               </div>
               <div className="w-full md:w-1/2 px-3 mb-3 md:mb-0">
                 <label className="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" htmlFor="contact-email">
                   Email
+                  <input
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 mt-2 leading-tight focus:outline-none focus:bg-white"
+                    id="contact-email"
+                    type="email"
+                    placeholder="some.email@somewhere.com"
+                    required
+                    name="email"
+                  />
                 </label>
-                <input
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="contact-email"
-                  type="email"
-                  placeholder="some.email@somewhere.com"
-                  required
-                  name="email"
-                />
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-3">
               <div className="w-full px-3">
                 <label className="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" htmlFor="contact-subject">
                   Subject
+                  <input
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 mt-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="contact-subject"
+                    type="text"
+                    placeholder="Hello!"
+                    name="subject"
+                  />
                 </label>
-                <input
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="contact-subject"
-                  type="text"
-                  placeholder="Hello!"
-                  name="subject"
-                />
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-3">
               <div className="w-full px-3">
                 <label className="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" htmlFor="contact-message">
                   Message
+                  <textarea
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 mt-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="contact-message"
+                    placeholder="Message goes here"
+                    rows="6"
+                    required
+                    name="message"
+                  />
                 </label>
-                <textarea
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="contact-message"
-                  placeholder="Message goes here"
-                  rows="6"
-                  required
-                  name="message"
-                />
               </div>
             </div>
             <div className="text-right">

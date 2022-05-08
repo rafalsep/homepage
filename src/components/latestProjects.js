@@ -5,31 +5,31 @@ import * as styles from './latestProjects.module.css';
 const projects = [
   {
     image: <StaticImage className={styles.image} src="./projects/experienceLayer/experienceLayer.png" alt="Experience Layer" />,
-    href: '/projects#experienceLayer',
+    href: '/projects/#el',
   },
   {
     image: <StaticImage className={styles.image} src="./projects/digitalWorkspace/digitalWorkspace.png" alt="Digital Workspace" />,
-    href: '/projects#digitalWorkspace',
+    href: '/projects/#dw',
   },
   {
     image: <StaticImage className={styles.image} src="./projects/digitalExperience/digitalExperience.png" alt="Digital Experience" />,
-    href: '/projects#digitalExperience',
+    href: '/projects/#dx',
   },
   {
     image: <StaticImage className={styles.image} src="./projects/dcci/dcci.png" alt="Digital Connect Check-In" />,
-    href: '/projects#dcci',
+    href: '/projects/#dcci',
   },
   {
     image: <StaticImage className={styles.image} src="./projects/ssm/ssm.png" alt="Sabre Sonic Mobile" />,
-    href: '/projects#ssm',
+    href: '/projects/#ssm',
   },
   {
     image: <StaticImage className={styles.image} src="./projects/bol/bol.jpeg" alt="Business Online" />,
-    href: '/projects#bol',
+    href: '/projects/#bol',
   },
   {
     image: <StaticImage className={styles.image} src="./projects/auiml/auiml.png" alt="Abstract User Interface Markup Language" />,
-    href: '/projects#auiml',
+    href: '/projects/#auiml',
   },
 ];
 

@@ -5,6 +5,7 @@ import TECHNOLOGIES from '@shared/technologies';
 export default {
   time: '2016 - 2017',
   link: 'https://developer.sabre.com/DCCI',
+  name: 'dcci',
   title: 'Digital Connect Check-In',
   subtitle: 'Broad collection of various APIs related to the flight check-in process',
   description:
