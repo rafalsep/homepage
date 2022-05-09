@@ -3,7 +3,6 @@ import Home from '../components/home';
 import LatestProjects from '../components/latestProjects';
 import About from '../components/about';
 import Libs from '../components/libs';
-import * as indexStyles from './index.module.css';
 import Menu from '../components/menu';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
@@ -11,7 +10,7 @@ import Footer from '../components/footer';
 const Index = () => (
   <main>
     <title>Home Page</title>
-    <div className={`${indexStyles.top}`}>
+    <div>
       <Menu />
       <div className="animate-wiggle">
         <div>

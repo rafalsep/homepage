@@ -9,7 +9,7 @@ const Home = () => {
       query {
         desktop: file(relativePath: { eq: "image.webp" }) {
           childImageSharp {
-            fluid(quality: 70, maxWidth: 200) {
+            fluid(quality: 70, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -24,7 +24,7 @@ const Home = () => {
         <div className="content text-center md:text-left w-full p-10 md:flex md:flex-row-reverse">
           <div className="grid justify-center md:-mt-12 relative">
             <div className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80 absolute border-4 border-lime-500 rounded-full justify-self-center" style={{ borderStyle: 'outset' }} />
-            <StaticImage className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80" src="../images/avatar.png" alt="Rafal Szczepankiewicz" loading="eager" data-test="avatar" />
+            <StaticImage className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80" src="../images/avatar.png" alt="Rafal Szczepankiewicz" loading="eager" data-test-id="avatar" />
           </div>
           <div className="flex-1">
             <h1 className="font-semibold py-12">

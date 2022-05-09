@@ -15,7 +15,10 @@
     "clean": "gatsby clean",
     "prepare": "husky install",
     "eslint:fix": "eslint --cache --fix",
-    "cypress:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
+    "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run"
   },
   "dependencies": {
     "autoprefixer": "10.4.4",
@@ -53,7 +56,8 @@
     "gatsby-plugin-eslint": "4.0.2",
     "husky": "7.0.4",
     "lint-staged": "12.4.1",
-    "prettier": "2.6.2"
+    "prettier": "2.6.2",
+    "start-server-and-test": "1.14.0"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
