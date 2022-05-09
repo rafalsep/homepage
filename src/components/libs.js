@@ -56,7 +56,7 @@ const Libs = ({ standalone }) => (
         </div>
         {!standalone && (
           <div className="pt-8 md:pt:0 md:ml-16">
-            <a className="text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-900 hover:bg-zinc-700" href="/libs">
+            <a className="text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-900 hover:bg-zinc-700 no-underline" href="/libs">
               Learn&nbsp;more
             </a>
           </div>

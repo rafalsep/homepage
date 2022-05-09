@@ -11,7 +11,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        // eslint-disable-next-line global-require
         postCssPlugins: [require('tailwindcss'), require('autoprefixer')],
       },
     },
@@ -31,7 +30,7 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    // 'gatsby-transformer-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-eslint',
       options: {
@@ -59,5 +58,6 @@ module.exports = {
         extensions: ['js'],
       },
     },
+    'gatsby-plugin-react-helmet',
   ],
 };

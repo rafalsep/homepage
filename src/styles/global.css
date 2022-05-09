@@ -5,12 +5,12 @@
     @apply text-white bg-zinc-900 text-[16px] lg:text-[18px] xl:text-[20px];
   }
   h1 {
-    @apply text-6xl leading-tight;
+    @apply text-6xl leading-tight sm:leading-none;
   }
   h2 {
     @apply text-4xl flex;
-    @apply before:content-['['] before:text-xl before:items-center before:flex before:pr-2 before:text-zinc-500;
-    @apply after:content-[']'] after:text-xl after:items-center after:flex after:pl-2 after:text-zinc-500;
+    @apply before:content-['['] before:text-xl before:items-center before:flex before:pr-2 before:text-zinc-400;
+    @apply after:content-[']'] after:text-xl after:items-center after:flex after:pl-2 after:text-zinc-400;
   }
   h3 {
     @apply text-2xl;
@@ -19,8 +19,8 @@
     @apply text-lime-500 underline decoration-lime-800 cursor-pointer underline-offset-4;
   }
   a:hover {
-    box-shadow: inset 0 -0.1em 0 currentColor;
-    transition: box-shadow 0.2s ease-out;
+    @apply decoration-lime-500;
+    transition: all 0.5s ease-out;
   }
   a svg:hover {
     filter: drop-shadow(3px 5px 2px rgb(32 204 22 / 0.8));
@@ -84,4 +84,34 @@ html {
   overflow: hidden;
   position: absolute !important;
   word-wrap: normal !important;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
 }

@@ -11,27 +11,28 @@ import Footer from '../components/footer';
 const Index = () => (
   <main>
     <title>Home Page</title>
-    <div className={indexStyles.top}>
+    <div className={`${indexStyles.top}`}>
       <Menu />
+      <div className="animate-wiggle">
+        <div>
+          <Home />
+        </div>
 
-      <div>
-        <Home />
-      </div>
+        <div className="px-5 md:px-10 lg:px-20 pt-12">
+          <LatestProjects />
+        </div>
 
-      <div className="pt-12">
-        <LatestProjects />
-      </div>
+        <div className="px-5 sm:px-10 lg:px-20 pt-12">
+          <About />
+        </div>
 
-      <div className="px-5 sm:px-10 pt-12">
-        <About />
-      </div>
+        <div className="px-5 sm:px-10 lg:px-20 pt-12">
+          <Libs />
+        </div>
 
-      <div className="px-5 sm:px-10 pt-12">
-        <Libs />
-      </div>
-
-      <div className="px-5 sm:px-10 pt-12">
-        <Contact />
+        <div className="px-5 sm:px-10 lg:px-20 pt-12">
+          <Contact />
+        </div>
       </div>
 
       <div className="mt-12 py-2 bg-zinc-800">

@@ -8,7 +8,7 @@ const ProjectsPage = () => (
     <title>Projects Page</title>
     <div className="flex-1">
       <Menu />
-      <div className="px-5 sm:px-10 pt-32 lg:pt-24">
+      <div className="px-5 md:px-10 lg:px-20 pt-32 lg:pt-24 animate-wiggle">
         <Projects />
       </div>
     </div>

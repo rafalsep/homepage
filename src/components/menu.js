@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 
 export default () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -7,9 +6,10 @@ export default () => {
   return (
     <>
       <header>
-        <div className="absolute top-5 left-5 z-10 border-4 border-lime-500 rounded-full border-dashed">
-          <a className="" href="/">
-            <StaticImage imgClassName="!p-2" width={75} src="../images/logo.png" alt="A dinosaur" />
+        <div className="absolute top-3 left-5 z-10 border-2 border-lime-500 rounded-full px-2.5 py-1.5" style={{ borderStyle: 'outset' }}>
+          <a className="no-underline flex" href="/">
+            <div className="font-logo text-4xl font-bold">R</div>
+            <div className="font-logo text-4xl font-bold">S</div>
           </a>
         </div>
         <div className="absolute top-5 right-5 z-10">
@@ -25,7 +25,7 @@ export default () => {
         </div>
       </header>
       {isNavOpen && (
-        <nav className={`fixed top-0 left-0 w-screen h-full bg-black/90 flex flex-col z-20 ${!isNavOpen ? 'hidden' : ''} sm:hidden`}>
+        <nav className={`fixed top-0 left-0 w-screen h-full bg-black/90 flex flex-col z-20 ${!isNavOpen ? 'hidden' : ''} sm:hidden animate-show`}>
           <div className="">
             <button type="button" className="absolute top-4 right-4" onClick={() => setIsNavOpen(false)}>
               <svg className="w-12 h-12" viewBox="0 0 40 40">
@@ -76,7 +76,7 @@ export default () => {
               </a>
             </li>
             <li className="p-4">
-              <a className="" href="#contact">
+              <a className="" href="/contact">
                 Contact
               </a>
             </li>

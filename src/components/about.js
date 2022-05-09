@@ -28,10 +28,9 @@ const About = ({ standalone }) => (
         <a href="https://www.sabre.com/" rel="noreferrer" target="_blank">
           Sabre Airline Solutions
         </a>
-        .
       </p>
       <div className="mt-5">
-        <h3 className="text-zinc-500 uppercase pb-2">Technologies I&apos;ve worked with</h3>
+        <p className="text-zinc-400 uppercase pb-2">Technologies I&apos;ve worked with</p>
         <ul className="list-none">
           {technologies.map((technology, index) => (
             <li key={`${index}`} className="inline-block scale-75">
