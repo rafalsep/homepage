@@ -14,7 +14,7 @@ export default () => {
         </div>
         <div className="absolute top-5 right-5 z-10">
           {!isNavOpen && (
-            <button type="button" className={`${isNavOpen ? 'hidden' : ''} sm:hidden`} onClick={() => setIsNavOpen(true)}>
+            <button type="button" className={`${isNavOpen ? 'hidden' : ''} sm:hidden`} onClick={() => setIsNavOpen(true)} aria-label="Menu">
               <svg className="fill-lime-500" viewBox="0 0 100 80" width="40" height="40">
                 <rect width="100" height="10" />
                 <rect y="30" width="100" height="10" />

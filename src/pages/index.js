@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Helmet } from 'react-helmet';
 import Home from '../components/home';
 import LatestProjects from '../components/latestProjects';
 import About from '../components/about';
@@ -9,7 +10,9 @@ import Footer from '../components/footer';
 
 const Index = () => (
   <main>
-    <title>Home Page</title>
+    <Helmet>
+      <title>Home Page</title>
+    </Helmet>
     <div>
       <Menu />
       <div className="animate-wiggle">
