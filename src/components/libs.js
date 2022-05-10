@@ -56,13 +56,13 @@ const Libs = ({ standalone }) => (
         </div>
         {!standalone && (
           <div className="pt-8 md:pt:0 md:ml-16">
-            <a className="text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-900 hover:bg-zinc-700 no-underline" href="/libs">
+            <a className="text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-900 hover:bg-zinc-700 no-underline" href="/libs" data-test-id="libs-learn-more">
               Learn&nbsp;more
             </a>
           </div>
         )}
       </div>
-      <ul className="mt-12 grid grid-cols-libs gap-2 relative">
+      <ul className="mt-12 grid grid-cols-libs gap-2 relative" data-test-id="libs-showcase">
         {libs.map(({ title, description, link, technologies, github, gist }, libIndex) => {
           const liClassName = standalone ? `relative` : `relative ${libIndex === 3 ? 'msm:hidden' : ''} ${libIndex >= 4 ? 'mmd:hidden' : ''}`;
           return (
@@ -95,9 +95,9 @@ const Libs = ({ standalone }) => (
                         )}
                       </div>
                     </div>
-                    <h3 className="mb-2 sm:mb-4">
+                    <p className="mb-2 sm:mb-4 text-2xl">
                       <a href={link}>{title}</a>
-                    </h3>
+                    </p>
                   </header>
                   <div className="mb-2 sm:mb-4">
                     <p>{description}</p>

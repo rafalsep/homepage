@@ -47,21 +47,25 @@ const LatestProjects = () => (
           </p>
         </div>
         <div className="pt-10 md:pt:0 md:ml-16">
-          <a className="text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-900 hover:bg-zinc-700 no-underline" href="/projects">
+          <a className="text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-900 hover:bg-zinc-700 no-underline" href="/projects" data-test-id="projects-learn-more">
             Learn&nbsp;more
           </a>
         </div>
       </div>
-      <div className="grid grid-cols-projects gap-1 pt-12 box-wrap">
+      <ul className="grid grid-cols-projects gap-1 pt-12 box-wrap" data-test-id="projects-gallery">
         {projects.map(({ image, href }, projectIndex) => (
-          <div key={href} className={`relative overflow-hidden ${styles.imageWrapper} ${projectIndex === 3 ? 'msm:hidden' : ''} ${projectIndex >= 4 ? 'mmd:hidden' : ''}`}>
+          <li key={href} className={`relative overflow-hidden ${styles.imageWrapper} ${projectIndex === 3 ? 'msm:hidden' : ''} ${projectIndex >= 4 ? 'mmd:hidden' : ''}`}>
             {image}
-            <a className={`${styles.imageLink} absolute text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-600 hover:bg-zinc-900 no-underline`} href={href}>
+            <a
+              className={`${styles.imageLink} absolute text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-600 hover:bg-zinc-900 no-underline`}
+              href={href}
+              data-test-id="project-gallery-link"
+            >
               Show&nbsp;details
             </a>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   </section>
 );

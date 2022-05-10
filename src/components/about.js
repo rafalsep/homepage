@@ -4,7 +4,7 @@ import TECHNOLOGIES from '@shared/technologies';
 const technologies = Object.values(TECHNOLOGIES);
 
 const About = ({ standalone }) => (
-  <section id="about" className="">
+  <section className="">
     <div className="">
       <header>{standalone ? <h1 className="pb-10">About me</h1> : <h2 className="pb-10">About me</h2>}</header>
       <p className="pb-4">

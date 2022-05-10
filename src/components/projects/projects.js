@@ -11,7 +11,7 @@ import * as styles from './projects.module.css';
 const projects = [experienceLayer, digitalWorkspace, digitalExperience, dcci, ssm, bol, auiml];
 
 const Projects = () => (
-  <section id="projects" className="">
+  <section className="">
     <div className="">
       <header>
         <h1 className="pb-10">Projects</h1>

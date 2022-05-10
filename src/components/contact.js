@@ -24,7 +24,7 @@ const Contact = ({ standalone }) => {
         <header>{standalone ? <h1 className="pb-10">Get in Touch</h1> : <h2 className="pb-10">Get in Touch</h2>}</header>
         <p>Want to work together or have any questions?</p>
         <div className="py-4">
-          <form className="w-full max-w-lg" action="https://getform.io/f/73fb3edb-f813-4bb1-94ee-b2d0f7d755e7" method="POST" onSubmit={handleSubmit}>
+          <form className="w-full max-w-lg" action="https://getform.io/f/73fb3edb-f813-4bb1-94ee-b2d0f7d755e7" method="POST" onSubmit={handleSubmit} data-test-id="contact-me-form">
             <div className="flex flex-wrap -mx-3">
               <div className="w-full md:w-1/2 px-3 mb-3 md:mb-0">
                 <label className="block uppercase tracking-wide text-zinc-400 text-xs font-bold mb-2" htmlFor="contact-name">

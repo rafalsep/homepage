@@ -16,28 +16,28 @@ const Index = () => (
     <div>
       <Menu />
       <div className="animate-wiggle">
-        <div>
+        <div data-test-id="home-section">
           <Home />
         </div>
 
-        <div className="px-5 md:px-10 lg:px-20 pt-12">
+        <div className="px-5 md:px-10 lg:px-20 pt-12" data-test-id="projects-section">
           <LatestProjects />
         </div>
 
-        <div className="px-5 sm:px-10 lg:px-20 pt-12">
+        <div className="px-5 sm:px-10 lg:px-20 pt-12" data-test-id="about-section">
           <About />
         </div>
 
-        <div className="px-5 sm:px-10 lg:px-20 pt-12">
+        <div className="px-5 sm:px-10 lg:px-20 pt-12" data-test-id="libs-section">
           <Libs />
         </div>
 
-        <div className="px-5 sm:px-10 lg:px-20 pt-12">
+        <div className="px-5 sm:px-10 lg:px-20 pt-12" data-test-id="contact-section">
           <Contact />
         </div>
       </div>
 
-      <div className="mt-12 py-2 bg-zinc-800">
+      <div className="mt-12 py-2 bg-zinc-800" data-test-id="footer-section">
         <Footer />
       </div>
     </div>
