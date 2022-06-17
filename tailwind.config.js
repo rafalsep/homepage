@@ -73,6 +73,7 @@ module.exports = {
         wiggle: 'wiggle 0.3s cubic-bezier(0.1, -0.6, 0.2, 0);',
         show: 'show 0.3s cubic-bezier(0.1, -0.6, 0.2, 0);',
         rubber: 'rubber 1s cubic-bezier(0.1, -0.6, 0.2, 0);',
+        'spin-slow': 'spin 5s linear infinite',
       },
     },
   },

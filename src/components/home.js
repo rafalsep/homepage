@@ -2,12 +2,13 @@ import React from 'react';
 import BackgroundImage from 'gatsby-background-image';
 import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
+import HomeBackground from './homeBackground';
 
 const Home = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        desktop: file(relativePath: { eq: "image.webp" }) {
+        desktop: file(relativePath: { eq: "image2.webp" }) {
           childImageSharp {
             fluid(quality: 70, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
@@ -19,11 +20,15 @@ const Home = () => {
   );
 
   return (
-    <BackgroundImage fluid={data.desktop.childImageSharp.fluid} loading="eager" className="bg-transparent">
+    <BackgroundImage fluid={data.desktop.childImageSharp.fluid} loading="eager" className="bg-transparent overflow-hidden" preserveStackingContext>
+      <HomeBackground />
       <section className="min-h-screen bg-cover w-full bg-center bg-no-repeat flex items-center relative">
         <div className="content text-center md:text-left w-full p-10 md:flex md:flex-row-reverse">
           <div className="grid justify-center md:-mt-12 relative">
-            <div className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80 absolute border-4 border-lime-500 rounded-full justify-self-center" style={{ borderStyle: 'outset' }} />
+            <div
+              className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80 absolute border-4 border-lime-500 rounded-full justify-self-center hover:animate-spin-slow z-10"
+              style={{ borderStyle: 'outset' }}
+            />
             <StaticImage className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80" src="../images/avatar.png" alt="Rafal Szczepankiewicz" loading="eager" data-test-id="avatar" />
           </div>
           <div className="flex-1">
@@ -37,7 +42,7 @@ const Home = () => {
                 <div className="msm:hidden inline-block">zczepankiewicz</div>
               </div>
             </h1>
-            <p className="pb-6 text-gray-300 text-4xl">I&apos;m web developer working from Cracow, Poland.</p>
+            <p className="pb-6 text-gray-300 text-4xl">Web developer working from Cracow, Poland.</p>
             <div className="max-w-[12rem] mt-4 mx-auto md:ml-0 w-screen mb-12">
               <ul className="flex justify-center md:justify-start items-center">
                 <li>
