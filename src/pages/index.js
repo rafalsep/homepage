@@ -13,6 +13,72 @@ const Index = () => (
     <Helmet>
       <title>Home Page</title>
     </Helmet>
+    <Helmet
+      htmlAttributes={{
+        lang: 'en',
+      }}
+      title="Rafal Szczepankiewicz Homepage"
+      link={[
+        {
+          rel: 'canonical',
+          href: 'https://rafalsep.com',
+        },
+        {
+          rel: 'shortlink',
+          href: 'https://rafalsep.com',
+        },
+      ]}
+      meta={[
+        {
+          name: 'robots',
+          content: 'max-image-preview:large',
+        },
+        {
+          name: `description`,
+          content: 'This is personal homepage of Rafal Szczepankiewicz',
+        },
+        {
+          property: `og:title`,
+          content: 'Rafal Szczepankiewicz',
+        },
+        {
+          property: `og:description`,
+          content: 'This is personal homepage of Rafal Szczepankiewicz',
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          property: `og:site_name`,
+          content: `Rafal Szczepankiewicz`,
+        },
+        {
+          property: `og:locale`,
+          content: `en_US`,
+        },
+        {
+          property: `og:url`,
+          content: `https://rafalsep.com`,
+        },
+        {
+          name: `twitter:creator`,
+          content: '@rafalsep',
+        },
+        {
+          name: `twitter:title`,
+          content: 'Rafal Szczepankiewicz',
+        },
+        {
+          name: `twitter:description`,
+          content: 'This is personal homepage of Rafal Szczepankiewicz',
+        },
+        {
+          name: `fb:profile_id`,
+          content: 'rafalsep',
+        },
+      ]}
+    />
     <div>
       <Menu />
       <div className="animate-wiggle">

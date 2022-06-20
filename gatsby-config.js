@@ -4,8 +4,9 @@ const gatsbyRequiredRules = path.join(process.cwd(), 'node_modules', 'gatsby', '
 
 module.exports = {
   siteMetadata: {
-    title: `home`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Rafal Szczepankiewicz Homepage`,
+    siteUrl: `https://www.rafalsep.com`,
+    twitterUsername: '@rafalsep',
   },
   plugins: [
     {
@@ -26,6 +27,20 @@ module.exports = {
       options: {
         name: `test2`,
         path: path.join(__dirname, `src`, `pages`),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Rafal Szczepankiewicz Homepage`,
+        short_name: `rafalsep homepage`,
+        description: `This is personal homepage of Rafal Szczepankiewicz`,
+        lang: `en`,
+        display: `standalone`,
+        start_url: `/`,
+        background_color: `#18181b`,
+        theme_color: `#84cc16`,
+        icon: `src/images/favicon.png`,
       },
     },
     `gatsby-plugin-image`,
