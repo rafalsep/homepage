@@ -12,5 +12,5 @@ export default {
     "Provides a rich set of services which can be called in any order assuming that a passenger itinerary is already retrieved, and the API's user has a Digital Connect Check-In session identifier",
   features: ['REST & GraphQL API', 'Stateful Session Manager by Redis', 'Microservice architecture'],
   technologies: [TECHNOLOGIES.java, TECHNOLOGIES.spring, TECHNOLOGIES.junit, TECHNOLOGIES.maven, TECHNOLOGIES.jenkins],
-  image: <StaticImage src="../../images/dcci.png" alt="Digital Connect Check-In" />,
+  image: <StaticImage src="../../../images/dcci.png" alt="Digital Connect Check-In" />,
 };

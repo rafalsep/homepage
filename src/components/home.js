@@ -10,7 +10,7 @@ const Home = () => {
       query {
         desktop: file(relativePath: { eq: "background.webp" }) {
           childImageSharp {
-            fluid(quality: 70, maxWidth: 1920) {
+            fluid(maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
