@@ -11,5 +11,5 @@ export default {
   description: 'E-commerce application providing an efficient, easy to use online interface for ABB Products, Parts and Repair order processing.',
   features: ['Backend developed in Java and Struts 2', 'Frontend based on angular and boostrap'],
   technologies: [TECHNOLOGIES.java, TECHNOLOGIES.spring, TECHNOLOGIES.maven, TECHNOLOGIES.junit, TECHNOLOGIES.js, TECHNOLOGIES.angular, TECHNOLOGIES.bootstrap, TECHNOLOGIES.oracle],
-  image: <StaticImage src="../../../images/bol.jpeg" alt="Business Online" />,
+  image: <StaticImage src="../../images/bol.jpeg" alt="Business Online" />,
 };
