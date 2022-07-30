@@ -22,7 +22,7 @@ const Seo = ({ page = '', title, description }) => (
       { name: `twitter:title`, content: title },
       { name: `twitter:description`, content: description },
       { name: `fb:profile_id`, content: 'rafalsep' },
-      { name: `keywords`, content: ['HTML', 'CSS', 'JavaScript', 'React', 'Best Practices', 'Frontend', 'Web'] },
+      { name: `keywords`, content: ['rafalsep', 'Rafal Szczepankiewicz', 'HTML', 'CSS', 'JavaScript', 'React', 'Best Practices', 'Frontend', 'Web'] },
     ]}
   />
 );

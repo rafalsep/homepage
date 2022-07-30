@@ -2,13 +2,13 @@ import React from 'react';
 import BackgroundImage from 'gatsby-background-image';
 import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
-import HomeBackground from './homeBackground';
+import HomeBackground from './homeBackground/homeBackground';
 
 const Home = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        desktop: file(relativePath: { eq: "image2.webp" }) {
+        desktop: file(relativePath: { eq: "background.webp" }) {
           childImageSharp {
             fluid(quality: 70, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp

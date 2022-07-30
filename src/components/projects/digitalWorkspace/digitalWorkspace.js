@@ -31,5 +31,5 @@ export default {
     TECHNOLOGIES.prettier,
     TECHNOLOGIES.sonar,
   ],
-  image: <StaticImage src="./digitalWorkspace.png" alt="Digital Workspace Preview" />,
+  image: <StaticImage src="../../../digitalWorkspace.png" alt="Digital Workspace Preview" />,
 };
