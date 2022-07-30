@@ -7,7 +7,7 @@ export default {
   link: 'https://www.sabre.com/products/digital-experience/',
   name: 'dx',
   title: 'Digital Experience',
-  subtitle: 'Embrace Next-Generation Airline E-Commerce',
+  subtitle: 'Next-Generation Airline E-Commerce',
   description: 'Web application used to book, exchange and checkin airline tickets. Used by airlines such as Kulula, Air Serbia or Bangkok Airways',
   features: ['Responsive web application written in ReactJS', 'Mobile first design', 'Deployed to AWS', 'Developed by over 30 people spread across Poland, United States and India'],
   technologies: [

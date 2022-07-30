@@ -18,7 +18,7 @@ const Index = () => (
           <Home />
         </div>
 
-        <div className="px-5 md:px-10 lg:px-20 pt-12" data-test-id="projects-section">
+        <div className="pt-12" data-test-id="projects-section">
           <LatestProjects />
         </div>
 

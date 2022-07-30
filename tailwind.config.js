@@ -23,8 +23,8 @@ module.exports = {
         msm: { max: '639px' },
       },
       gridTemplateColumns: {
-        libs: 'repeat(auto-fill, minmax(18rem, 1fr))',
-        projects: 'repeat(auto-fill, minmax(18rem, 1fr))',
+        libs: 'repeat(auto-fill, minmax(23rem, 1fr))',
+        projects: 'repeat(auto-fill, minmax(26rem, 1fr))',
       },
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],

@@ -11,7 +11,6 @@ describe('Verify index page content', () => {
     cy.getBySel('home-github-link').should('be.visible');
     cy.getBySel('home-linkedin-link').should('be.visible');
     cy.getBySel('home-gmail-link').should('be.visible');
-    cy.getBySel('home-twitter-link').should('be.visible');
   });
 
   it(`Validate projects section`, () => {

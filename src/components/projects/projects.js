@@ -5,10 +5,9 @@ import digitalExperience from './digitalExperience';
 import dcci from './dcci';
 import ssm from './ssm';
 import bol from './bol';
-import auiml from './auiml';
 import * as styles from './projects.module.css';
 
-const projects = [experienceLayer, digitalWorkspace, digitalExperience, dcci, ssm, bol, auiml];
+const projects = [experienceLayer, digitalWorkspace, digitalExperience, dcci, ssm, bol];
 
 const Projects = () => (
   <section className="">
@@ -24,9 +23,9 @@ const Projects = () => (
             >
               <time className={styles.date}>{time}</time>
             </div>
-            <div className={`${styles.content} pt-3 sm:py-5 sm:pl-0 sm:ml-[8.5rem] sm:mr-2 lg:flex`}>
-              <div className="lg:flex-1">
-                <a className="no-underline" href={link}>
+            <div className={`${styles.content} pt-3 sm:py-5 sm:pl-0 sm:ml-[8.5rem] sm:mr-2 2xl:flex`}>
+              <div className="2xl:flex-1">
+                <a href={link} rel="noreferrer" target="_blank">
                   <h2 className="pb-2 text-lime-500">{title}</h2>
                 </a>
                 <p className="text-zinc-400">{subtitle}</p>

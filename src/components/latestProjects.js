@@ -27,24 +27,17 @@ const projects = [
     image: <StaticImage className={styles.image} src="./projects/bol/bol.jpeg" alt="Business Online" />,
     href: '/projects/#bol',
   },
-  {
-    image: <StaticImage className={styles.image} src="./projects/auiml/auiml.png" alt="Abstract User Interface Markup Language" />,
-    href: '/projects/#auiml',
-  },
 ];
 
 const LatestProjects = () => (
   <section className="">
     <div>
-      <div className="md:flex items-end">
+      <div className="md:flex items-end px-5 sm:px-10 lg:px-20">
         <div className="">
           <header>
             <h2 className="pb-10">Projects</h2>
           </header>
-          <p>
-            Big eCommerce projects I&apos;ve worked on over the years together with amazing people from around the globe. Most of them are still alive and in good condition, earning every peny spend
-            on development.
-          </p>
+          <p>Some of the Big eCommerce projects I&apos;ve worked on over the years together with amazing people from around the globe. All of them are still alive and in good condition.</p>
         </div>
         <div className="pt-10 md:pt:0 md:ml-16">
           <a className="text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-900 hover:bg-zinc-700 no-underline" href="/projects" data-test-id="projects-learn-more">
@@ -54,7 +47,7 @@ const LatestProjects = () => (
       </div>
       <ul className="grid grid-cols-projects gap-1 pt-12 box-wrap" data-test-id="projects-gallery">
         {projects.map(({ image, href }, projectIndex) => (
-          <li key={href} className={`relative overflow-hidden ${styles.imageWrapper} ${projectIndex === 3 ? 'msm:hidden' : ''} ${projectIndex >= 4 ? 'mmd:hidden' : ''}`}>
+          <li key={href} className={`relative overflow-hidden ${styles.imageWrapper} ${projectIndex === 3 ? 'mmd:hidden' : ''} ${projectIndex >= 4 ? 'mxl:hidden' : ''}`}>
             {image}
             <a
               className={`${styles.imageLink} absolute text-lime-500 border border-lime-500 py-4 px-8 rounded bg-zinc-600 hover:bg-zinc-900 no-underline`}
