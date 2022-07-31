@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import BackgroundImage from 'gatsby-background-image';
 import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
@@ -9,7 +9,9 @@ import HomeBackground from './homeBackground';
 const Home = () => {
   const showAnimation = useAnimation();
 
-  document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+  useEffect(() => {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+  }, []);
 
   const data = useStaticQuery(
     graphql`
