@@ -22,6 +22,7 @@ module.exports = {
         mmd: { max: '767px' },
         msm: { max: '639px' },
         xs: '475px',
+        smhp: { raw: '(max-height: 750px) and (orientation: portrait)' },
       },
       gridTemplateColumns: {
         libs: 'repeat(auto-fill, minmax(18rem, 1fr))',

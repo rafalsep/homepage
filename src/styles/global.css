@@ -2,7 +2,7 @@
 
 @layer base {
   html {
-    @apply w-full text-white bg-zinc-900 text-[16px] lg:text-[18px] xl:text-[20px];
+    @apply w-full text-white bg-zinc-900 smhp:text-[14px] text-[16px] lg:text-[18px] xl:text-[20px];
     scroll-behavior: smooth;
   }
   body {
