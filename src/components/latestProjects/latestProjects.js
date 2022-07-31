@@ -30,10 +30,10 @@ const projects = [
 ];
 
 const LatestProjects = () => (
-  <section className="">
+  <section>
     <div>
       <div className="md:flex items-end px-5 sm:px-10 lg:px-20">
-        <div className="">
+        <div>
           <header>
             <h2 className="pb-10">Projects</h2>
           </header>

@@ -19,7 +19,7 @@ const Contact = ({ standalone }) => {
   };
 
   return (
-    <section className="">
+    <section>
       <div>
         <header>{standalone ? <h1 className="pb-10">Get in Touch</h1> : <h2 className="pb-10">Get in Touch</h2>}</header>
         <p>Want to work together or have any questions?</p>

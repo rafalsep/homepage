@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Home from '../components/home';
 import LatestProjects from '../components/latestProjects';
 import About from '../components/about';
@@ -13,7 +13,7 @@ const Index = () => (
     <Seo title="Rafal Szczepankiewicz Homepage" description="This is personal homepage of Rafal Szczepankiewicz" />
     <div>
       <Menu />
-      <div className="animate-wiggle">
+      <div>
         <div data-test-id="home-section">
           <Home />
         </div>

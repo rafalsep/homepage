@@ -47,10 +47,10 @@ const libs = [
 ];
 
 const Libs = ({ standalone }) => (
-  <section className="">
+  <section>
     <div>
       <div className="md:flex items-end">
-        <div className="">
+        <div>
           <header>{standalone ? <h1 className="pb-10">Libs/Gists</h1> : <h2 className="pb-10">Libs/Gists</h2>}</header>
           <p>Other smaller projects and gists that do not fall into eCommerce category that I&apos;ve worked on over the years. Please check github for details on each one.</p>
         </div>

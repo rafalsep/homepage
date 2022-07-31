@@ -10,8 +10,8 @@ import * as styles from './projects.module.css';
 const projects = [experienceLayer, digitalWorkspace, digitalExperience, dcci, ssm, bol];
 
 const Projects = () => (
-  <section className="">
-    <div className="">
+  <section>
+    <div>
       <header>
         <h1 className="pb-10">Projects</h1>
       </header>

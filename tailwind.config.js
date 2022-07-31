@@ -28,7 +28,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
-        logo: ["'Freehand', cursive", ...defaultTheme.fontFamily.sans],
+        logo: ["'Freehand', cursive"],
       },
       keyframes: {
         wiggle: {
