@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import BackgroundImage from 'gatsby-background-image';
 import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
@@ -8,10 +8,6 @@ import HomeBackground from './homeBackground';
 
 const Home = () => {
   const showAnimation = useAnimation();
-
-  useEffect(() => {
-    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
-  }, []);
 
   const data = useStaticQuery(
     graphql`
@@ -30,7 +26,7 @@ const Home = () => {
   return (
     <BackgroundImage fluid={data.desktop.childImageSharp.fluid} loading="eager" className="bg-transparent overflow-hidden" preserveStackingContext>
       <HomeBackground />
-      <section className="bg-cover w-full bg-center bg-no-repeat flex items-center relative aaaa">
+      <section className="bg-cover w-full bg-center bg-no-repeat flex items-center relative min-h-screen min-h-[calc(var(--vh, 1vh) * 100)]">
         <div className="content text-center md:text-left w-full p-10 md:flex md:flex-row-reverse">
           <TransitionGroup component={null}>
             {showAnimation && (
