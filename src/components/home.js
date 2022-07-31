@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <BackgroundImage fluid={data.desktop.childImageSharp.fluid} loading="eager" className="bg-transparent overflow-hidden" preserveStackingContext>
       <HomeBackground />
-      <section className="min-h-screen bg-cover w-full bg-center bg-no-repeat flex items-center relative">
+      <section className="bg-cover w-full bg-center bg-no-repeat flex items-center relative aaaa">
         <div className="content text-center md:text-left w-full p-10 md:flex md:flex-row-reverse">
           <TransitionGroup component={null}>
             {showAnimation && (
