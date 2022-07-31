@@ -4,7 +4,8 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import useAnimation from '@shared/useAnimation';
-import HomeBackground from './homeBackground';
+import HomeBackground from '../homeBackground';
+import * as styles from './home.module.css';
 
 const Home = () => {
   const showAnimation = useAnimation();
@@ -26,7 +27,7 @@ const Home = () => {
   return (
     <BackgroundImage fluid={data.desktop.childImageSharp.fluid} loading="eager" className="bg-transparent overflow-hidden" preserveStackingContext>
       <HomeBackground />
-      <section className="min-h-screen bg-cover w-full bg-center bg-no-repeat flex items-center relative">
+      <section className={`bg-cover w-full bg-center bg-no-repeat flex items-center relative ${styles.content}`}>
         <div className="content text-center md:text-left w-full p-10 md:flex md:flex-row-reverse">
           <TransitionGroup component={null}>
             {showAnimation && (
@@ -36,7 +37,7 @@ const Home = () => {
                     className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80 absolute border-4 border-lime-500 rounded-full justify-self-center hover:animate-spin-slow z-10"
                     style={{ borderStyle: 'outset' }}
                   />
-                  <StaticImage className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80" src="../images/avatar.png" alt="Rafal Szczepankiewicz" loading="eager" data-test-id="avatar" />
+                  <StaticImage className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80" src="../../images/avatar.png" alt="Rafal Szczepankiewicz" loading="eager" data-test-id="avatar" />
                 </div>
               </CSSTransition>
             )}
