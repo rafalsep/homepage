@@ -9,6 +9,8 @@ import HomeBackground from './homeBackground';
 const Home = () => {
   const showAnimation = useAnimation();
 
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+
   const data = useStaticQuery(
     graphql`
       query {

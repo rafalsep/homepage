@@ -4,17 +4,10 @@
   html {
     @apply w-full text-white bg-zinc-900 smhp:text-[14px] text-[16px] lg:text-[18px] xl:text-[20px];
     scroll-behavior: smooth;
-    height: -webkit-fill-available;
   }
   body {
     -webkit-font-smoothing: antialiased;
     @apply w-full;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
-  .aaaa {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
   }
   h1 {
     @apply text-6xl leading-tight sm:leading-none;
@@ -74,4 +67,9 @@
   opacity: 1;
   transform: translateY(0px);
   transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1), transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.aaaa {
+  min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * 100);
 }
