@@ -62,7 +62,7 @@ const Libs = ({ standalone }) => (
           </div>
         )}
       </div>
-      <ul className="mt-12 grid grid-cols-libs gap-2 relative" data-test-id="libs-showcase">
+      <ul className="mt-12 grid grid-cols-libs xs:grid-cols-libslg gap-2 relative" data-test-id="libs-showcase">
         {libs.map(({ title, description, link, technologies, github, gist }, libIndex) => {
           const liClassName = standalone ? `relative` : `relative ${libIndex === 3 ? 'mmd:hidden' : ''} ${libIndex >= 4 ? 'mxl:hidden' : ''}`;
           return (

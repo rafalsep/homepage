@@ -45,7 +45,7 @@ const LatestProjects = () => (
           </a>
         </div>
       </div>
-      <ul className="grid grid-cols-projects gap-1 pt-12 box-wrap" data-test-id="projects-gallery">
+      <ul className="grid grid-cols-projects xs:grid-cols-projectslg gap-1 pt-12 box-wrap" data-test-id="projects-gallery">
         {projects.map(({ image, href }, projectIndex) => (
           <li key={href} className={`relative overflow-hidden ${styles.imageWrapper} ${projectIndex === 3 ? 'mmd:hidden' : ''} ${projectIndex >= 4 ? 'mxl:hidden' : ''}`}>
             {image}

@@ -21,10 +21,13 @@ module.exports = {
         mlg: { max: '1023px' },
         mmd: { max: '767px' },
         msm: { max: '639px' },
+        xs: '475px',
       },
       gridTemplateColumns: {
-        libs: 'repeat(auto-fill, minmax(23rem, 1fr))',
-        projects: 'repeat(auto-fill, minmax(26rem, 1fr))',
+        libs: 'repeat(auto-fill, minmax(18rem, 1fr))',
+        libslg: 'repeat(auto-fill, minmax(23rem, 1fr))',
+        projects: 'repeat(auto-fill, minmax(18rem, 1fr))',
+        projectslg: 'repeat(auto-fill, minmax(26rem, 1fr))',
       },
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
