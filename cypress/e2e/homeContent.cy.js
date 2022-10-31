@@ -47,28 +47,6 @@ describe('Verify index page content', () => {
     cy.url().should('include', '/libs');
   });
 
-  it(`Validate contact section`, () => {
-    let submitted = false;
-    cy.getBySel('contact-me-form').invoke('submit', e => {
-      // do not actually submit the form
-      e.preventDefault();
-      submitted = true;
-    });
-
-    cy.getBySel('contact-section').should('be.visible').find('h2').should('have.length', 1).should('contain.text', 'Get in Touch');
-    cy.getBySel('contact-me-form')
-      .within(() => {
-        cy.get('input[name="name"]').should('be.empty').type('John Doe').should('have.value', 'John Doe');
-        cy.get('input[name="email"]').should('be.empty').type('testemail@gmail.com').should('have.value', 'testemail@gmail.com');
-        cy.get('input[name="subject"]').should('be.empty').type('Yo!').should('have.value', 'Yo!');
-        cy.get('textarea[name="message"]').should('be.empty').type('Some random message').should('have.value', 'Some random message');
-        cy.get('button[type="submit"]').click();
-      })
-      .then(() => {
-        expect(submitted, 'form submitted').to.eq(true);
-      });
-  });
-
   it(`Validate Links are not broken on page`, () => {
     cy.get("a:not([href*='mailto:]']").each($el => {
       if ($el.prop('href').length > 0) {

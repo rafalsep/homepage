@@ -26,10 +26,4 @@ xdescribe('Verify accessibility', () => {
     cy.get('main').injectAxe();
     cy.checkA11y();
   });
-
-  it('Verify contact page accessibility', () => {
-    cy.visit('/contact');
-    cy.get('main').injectAxe();
-    cy.checkA11y();
-  });
 });

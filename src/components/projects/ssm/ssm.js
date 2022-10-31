@@ -30,5 +30,5 @@ export default {
     TECHNOLOGIES.css,
     TECHNOLOGIES.jenkins,
   ],
-  image: <StaticImage src="../../../images/ssm.png" alt="Sabre Sonic Mobile" />,
+  images: [<StaticImage src="../../../images/ssm.png" alt="Sabre Sonic Mobile" />],
 };

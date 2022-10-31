@@ -10,6 +10,20 @@ const libs = [
     technologies: [TECHNOLOGIES.testcafe, TECHNOLOGIES.js, TECHNOLOGIES.nodejs, TECHNOLOGIES.npm],
   },
   {
+    title: 'Experience Layer Dev Tools',
+    link: 'https://github.com/rafalsep/experience-layer-devtools',
+    description: 'Chrome Devtools extension that monitors network traffic and displays the GraphQL request information in formatted and coloured output',
+    github: true,
+    technologies: [TECHNOLOGIES.testcafe, TECHNOLOGIES.js, TECHNOLOGIES.graphql, TECHNOLOGIES.sass, TECHNOLOGIES.react, TECHNOLOGIES.nodejs, TECHNOLOGIES.npm],
+  },
+  {
+    title: 'Testcafe accessibility',
+    link: 'https://github.com/rafalsep/testcafe-accessibility',
+    description: 'Small lib that can be used to run accessibility for testcafe using axe and generate html report with screenshot',
+    github: true,
+    technologies: [TECHNOLOGIES.testcafe, TECHNOLOGIES.js, TECHNOLOGIES.nodejs, TECHNOLOGIES.npm],
+  },
+  {
     title: 'Jenkins Backup and Restore DSL',
     link: 'https://gist.github.com/rafalsep/804aee1998f2e759a9272e2eb09384e2',
     description: 'Jenkins DSL script that will add backup and restore jobs for Jenkins. Backups all configs and jobs to Google Cloud Storage',
@@ -51,7 +65,7 @@ const Libs = ({ standalone }) => (
     <div>
       <div className="md:flex items-end">
         <div>
-          <header>{standalone ? <h1 className="pb-10">Libs/Gists</h1> : <h2 className="pb-10">Libs/Gists</h2>}</header>
+          <header>{standalone ? <h1 className="pb-10">Libs/Gists</h1> : <h2 className="pb-10">Latest Libs/Gists</h2>}</header>
           <p>Other smaller projects and gists that do not fall into eCommerce category that I&apos;ve worked on over the years. Please check github for details on each one.</p>
         </div>
         {!standalone && (
@@ -62,8 +76,8 @@ const Libs = ({ standalone }) => (
           </div>
         )}
       </div>
-      <ul className="mt-12 grid grid-cols-libs xs:grid-cols-libslg gap-2 relative" data-test-id="libs-showcase">
-        {libs.map(({ title, description, link, technologies, github, gist }, libIndex) => {
+      <ul className="mt-12 grid grid-cols-projects md:grid-cols-projectslg 2xl:grid-cols-projectsxl gap-2 relative" data-test-id="libs-showcase">
+        {(standalone ? libs : libs.slice(0, 4)).map(({ title, description, link, technologies, github, gist }, libIndex) => {
           const liClassName = standalone ? `relative` : `relative ${libIndex === 3 ? 'mmd:hidden' : ''} ${libIndex >= 4 ? 'mxl:hidden' : ''}`;
           return (
             <li className={liClassName} key={title}>

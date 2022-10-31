@@ -68,11 +68,6 @@ export default () => {
                   Libs/Gists
                 </a>
               </li>
-              <li className="p-4">
-                <a className="text-4xl" href="/contact" onClick={() => setIsNavOpen(false)} data-test-id="go-to-contact-page">
-                  Contact
-                </a>
-              </li>
             </ul>
           </div>
         </nav>
@@ -108,17 +103,6 @@ export default () => {
                   <li className="p-4" style={{ transitionDelay: `200ms`, transitionDuration: '300ms' }}>
                     <a href="/libs" data-test-id="go-to-libs-page">
                       Libs/Gists
-                    </a>
-                  </li>
-                </CSSTransition>
-              )}
-            </TransitionGroup>
-            <TransitionGroup component={null}>
-              {showAnimation && (
-                <CSSTransition classNames="fade-down" timeout={0}>
-                  <li className="p-4" style={{ transitionDelay: `300ms`, transitionDuration: '300ms' }}>
-                    <a href="/contact" data-test-id="go-to-contact-page">
-                      Contact
                     </a>
                   </li>
                 </CSSTransition>

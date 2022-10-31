@@ -27,8 +27,9 @@ module.exports = {
       gridTemplateColumns: {
         libs: 'repeat(auto-fill, minmax(18rem, 1fr))',
         libslg: 'repeat(auto-fill, minmax(23rem, 1fr))',
-        projects: 'repeat(auto-fill, minmax(18rem, 1fr))',
-        projectslg: 'repeat(auto-fill, minmax(26rem, 1fr))',
+        projects: '1fr',
+        projectslg: '1fr 1fr',
+        projectsxl: '1fr 1fr 1fr 1fr',
       },
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],

@@ -14,6 +14,7 @@ export default {
     TECHNOLOGIES.typescript,
     TECHNOLOGIES.nodejs,
     TECHNOLOGIES.npm,
+    TECHNOLOGIES.graphql,
     TECHNOLOGIES.apollo,
     TECHNOLOGIES.express,
     TECHNOLOGIES.git,
@@ -28,5 +29,10 @@ export default {
     TECHNOLOGIES.prettier,
     TECHNOLOGIES.sonar,
   ],
-  image: <StaticImage src="../../../images/experienceLayer.png" alt="Digital Workspace Preview" />,
+  images: [
+    <StaticImage src="../../../images/experienceLayer2.png" alt="Digital Workspace Preview" />,
+    <StaticImage objectFit="fill" className="project-images-secondary" src="../../../images/experienceLayer3.png" alt="Experience Layer" />,
+    <StaticImage objectFit="fill" className="project-images-secondary" src="../../../images/experienceLayer.png" alt="Experience Layer" />,
+    <StaticImage objectFit="fill" className="project-images-secondary" src="../../../images/experienceLayer4.png" alt="Experience Layer" />,
+  ],
 };

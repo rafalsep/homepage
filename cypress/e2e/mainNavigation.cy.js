@@ -46,17 +46,5 @@ describe('Verify main navigation links', () => {
       cy.getBySel('main-logo').click();
       cy.url().should('not.include', '/libs');
     });
-
-    it(`Validate ${testType} Contact navigation`, () => {
-      initMobile();
-
-      cy.getBySel('go-to-contact-page').should('be.visible').filter(':visible').click();
-
-      cy.get('h1').should('be.visible').should('have.text', 'Get in Touch');
-      cy.url().should('include', '/contact');
-
-      cy.getBySel('main-logo').click();
-      cy.url().should('not.include', '/contact');
-    });
   });
 });

@@ -31,5 +31,10 @@ export default {
     TECHNOLOGIES.prettier,
     TECHNOLOGIES.sonar,
   ],
-  image: <StaticImage src="../../../images/digitalWorkspace.png" alt="Digital Workspace Preview" />,
+  images: [
+    <StaticImage src="../../../images/digitalWorkspace.png" alt="Digital Workspace Preview" />,
+    <StaticImage objectFit="fill" className="project-images-secondary" src="../../../images/digitalWorkspace2.png" alt="Digital Workspace Preview" />,
+    <StaticImage objectFit="fill" className="project-images-secondary" src="../../../images/digitalWorkspace3.png" alt="Digital Workspace Preview" />,
+    <StaticImage objectFit="fill" className="project-images-secondary" src="../../../images/digitalWorkspace4.png" alt="Digital Workspace Preview" />,
+  ],
 };
