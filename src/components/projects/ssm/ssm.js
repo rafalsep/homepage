@@ -15,6 +15,10 @@ export default {
     'Customizable via in house CMS',
     'Created and maintained by over 30 people spread across Poland, United States and India.',
   ],
+  details: `When I joined Sabre Sonic Mobile was an outdated Full Stack Project based on Java/Spring/Oracle on the backend and Backbone/JQuery on the frontend.
+    It was used to provide functionality to book new flights and exchange, refund, cancel existing reservations. 
+    First few months I spent on learning and improving architecture and tools of the project. 
+    Later I changed my focus and mostly worked on designing and implementing new features.`,
   technologies: [
     TECHNOLOGIES.java,
     TECHNOLOGIES.spring,
@@ -30,5 +34,5 @@ export default {
     TECHNOLOGIES.css,
     TECHNOLOGIES.jenkins,
   ],
-  images: [<StaticImage src="../../../images/ssm.png" alt="Sabre Sonic Mobile" />],
+  images: [<StaticImage layout="fullWidth" src="../../../images/ssm.png" alt="Sabre Sonic Mobile" />],
 };

@@ -1,7 +1,5 @@
 const path = require('path');
 
-const gatsbyRequiredRules = path.join(process.cwd(), 'node_modules', 'gatsby', 'dist', 'utils', 'eslint-rules');
-
 module.exports = {
   siteMetadata: {
     title: `Rafal Szczepankiewicz Homepage`,
@@ -46,15 +44,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-plugin-eslint',
-      options: {
-        rulePaths: [gatsbyRequiredRules],
-        stages: ['develop'],
-        extensions: ['js', 'jsx', 'ts', 'tsx'],
-        exclude: ['node_modules', 'bower_components', '.cache', 'public'],
-      },
-    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
