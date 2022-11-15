@@ -12,7 +12,7 @@ export default () => {
         <TransitionGroup component={null}>
           {showAnimation && (
             <CSSTransition classNames="fade-down" timeout={0}>
-              <div className="absolute top-3 left-5 z-10 border-2 border-lime-500 rounded-full px-2.5 py-1.5" style={{ borderStyle: 'outset', transitionDelay: `0ms`, transitionDuration: '300ms' }}>
+              <div className="absolute z-20 top-3 left-5 border-2 border-lime-500 rounded-full px-2.5 py-1.5" style={{ borderStyle: 'outset', transitionDelay: `0ms`, transitionDuration: '300ms' }}>
                 <a className="no-underline flex" href="/" data-test-id="main-logo">
                   <div className="font-logo text-4xl font-bold">R</div>
                   <div className="font-logo text-4xl font-bold">S</div>
@@ -21,7 +21,7 @@ export default () => {
             </CSSTransition>
           )}
         </TransitionGroup>
-        <div className="absolute top-5 right-5 z-10">
+        <div className="absolute z-20 top-5 right-5">
           <TransitionGroup component={null}>
             {showAnimation && (
               <CSSTransition classNames="fade" timeout={0}>
@@ -47,12 +47,12 @@ export default () => {
       {isNavOpen && (
         <nav className={`fixed top-0 left-0 w-screen h-full bg-black/90 flex flex-col z-20 ${!isNavOpen ? 'hidden' : ''} sm:hidden animate-show`}>
           <div>
-            <button type="button" className="absolute top-4 right-4" onClick={() => setIsNavOpen(false)} data-test-id="close-main-menu">
+            <button type="button" className="absolute z-20 top-4 right-4" onClick={() => setIsNavOpen(false)} data-test-id="close-main-menu">
               <svg className="w-12 h-12" viewBox="0 0 40 40">
                 <path className="close-x stroke-lime-500 stroke-3" d="M 10,10 L 30,30 M 30,10 L 10,30" />
               </svg>
             </button>
-            <ul className="absolute left-1/2 inline -translate-x-2/4 top-36 text-center">
+            <ul className="absolute z-20 left-1/2 inline -translate-x-2/4 top-36 text-center">
               <li className="p-4">
                 <a className="text-4xl" href="/about" onClick={() => setIsNavOpen(false)} data-test-id="go-to-about-page">
                   About

@@ -13,14 +13,13 @@
     "lint": "eslint --cache",
     "lint:fix": "eslint --cache --fix",
     "cy:open": "cypress open",
-    "cy:run": "cypress run",
+    "cy:run": "cypress run --headless",
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
     "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run"
   },
   "dependencies": {
     "autoprefixer": "10.4.13",
     "gatsby": "5.0.1",
-    "gatsby-background-image": "1.6.0",
     "gatsby-plugin-alias-imports": "1.0.5",
     "gatsby-plugin-image": "3.0.0",
     "gatsby-plugin-manifest": "5.0.0",
