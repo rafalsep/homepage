@@ -4,6 +4,10 @@ import * as styles from './latestProjects.module.css';
 
 const projects = [
   {
+    image: <StaticImage className={styles.image} src="../../images/hpp.png" alt="Hosted Payment Page" />,
+    href: '/projects/#hpp',
+  },
+  {
     image: <StaticImage className={styles.image} src="../../images/experienceLayer2.png" alt="Experience Layer" />,
     href: '/projects/#el',
   },
@@ -14,10 +18,6 @@ const projects = [
   {
     image: <StaticImage className={styles.image} src="../../images/digitalExperience.png" alt="Digital Experience" />,
     href: '/projects/#dx',
-  },
-  {
-    image: <StaticImage className={styles.image} src="../../images/ssm.png" alt="Sabre Sonic Mobile" />,
-    href: '/projects/#ssm',
   },
 ];
 

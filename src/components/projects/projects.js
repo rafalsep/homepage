@@ -1,5 +1,6 @@
 import React from 'react';
 import ShowMoreText from 'react-show-more-text';
+import hpp from './hpp';
 import digitalWorkspace from './digitalWorkspace';
 import experienceLayer from './experienceLayer';
 import digitalExperience from './digitalExperience';
@@ -10,7 +11,7 @@ import auiml from './auiml';
 import rxa from './rxa';
 import * as styles from './projects.module.css';
 
-const projects = [experienceLayer, digitalWorkspace, digitalExperience, dcci, ssm, bol, rxa, auiml];
+const projects = [hpp, experienceLayer, digitalWorkspace, digitalExperience, dcci, ssm, bol, rxa, auiml];
 
 const Projects = () => (
   <section>
